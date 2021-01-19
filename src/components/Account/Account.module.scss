@@ -1,0 +1,78 @@
+@import '../HomePage/config.module';
+@import 'mobile.module';
+
+.Account {
+    scroll-behavior: none;
+    background-color: #f1f1f1 !important;
+    color: #19374c;
+    font-family: "Arial";
+    font-weight: 400;
+    height: 100vh !important;
+
+    .Li {
+        a {
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 87px;
+            color: #19374c;
+            font-family: "Arial";
+            text-align: center;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                transition: 0.5s ease-in-out;
+                color: #50d2c2;
+                // color: #b8b8b8;
+            }
+        }
+
+        .Avatar {
+            background-color: #19374c;
+            margin: 21px;
+            padding: 10px 10px 10px 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+
+    }
+
+    .Main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .Form {
+            text-align: center;
+            width: 50%;
+            margin-bottom: 17px;
+              & .Img{
+                    width: 150px !important;
+                    height:150px !important;
+                }
+            .H1 {
+                font-weight: 400;
+                text-align: left;
+                margin-left: 140px;
+                margin-bottom: 10px;
+            }
+
+            .ProfileImg {
+                background-color: #19374c;
+                width: 200px;
+                height: 200px;
+                border-radius: 15rem;
+                border: none;
+            }
+
+            .Buttons {
+                display: flex;
+                justify-content: center;
+               & .B1{
+                    margin-right: 34px;
+                }
+            }
+        }
+    }
+}

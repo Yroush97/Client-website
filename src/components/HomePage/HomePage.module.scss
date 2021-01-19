@@ -1,0 +1,115 @@
+@import 'config.module';
+@import 'mobile.module';
+
+
+.Container {
+    background-color: #19374c;
+    @include flexbox(column);
+    font-family: "Arial";
+    height: 100vh;
+
+    .Li {
+        a {
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 87px;
+            color: #ffffff;
+            font-family: "Arial";
+            text-align: center;
+            cursor: pointer;
+            flex: 1;
+
+            &:hover,
+            &:active {
+                transition: 0.5s ease-in-out;
+                color: #50d2c2;
+            }
+        }
+
+        .Avatar {
+            background-color: white;
+            margin: 13px;
+            padding: 0px 10px 0px 10px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .Main {
+        // height: 97vh;
+        padding: 20px 200px 55px 50px;
+        overflow: hidden;
+        @include flexbox(row);
+        justify-content: space-between;
+
+
+        .sec1 {
+            flex: 1;
+            @include flexbox(column);
+            margin-left: 59px;
+
+            .Head {
+                flex: 1;
+                font-size: 60px;
+                letter-spacing: -1px;
+                color: #50d2c2;
+                text-align: left;
+            }
+
+            .Para {
+                flex: 1;
+                width: 680px;
+                height: 110px;
+                font-size: 26px;
+                line-height: 44px;
+                color: #ffffff;
+                font-family: "Arial";
+                text-align: left;
+            }
+
+            .Button {
+                flex: 0;
+                margin-top: 87px;
+                @include flexbox(row);
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                background-color: #50d2c2;
+                color: white;
+                padding: 15px;
+                width: 256px;
+                // height: 71px;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                border: none;
+                font-size: 26px;
+
+                // line-height: 54px;
+                &:hover {
+                    transition: all 0.5s ease-in-out;
+                    color: #50d2c2;
+                    background-color: whitesmoke;
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+        }
+
+        .sec2 {
+            flex: 1;
+            @include flexbox(row);
+            z-index: 9;
+
+            .mobi {
+                transition: 0.5s ease-in-out;
+                flex: 1;
+                width: 498px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

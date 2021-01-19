@@ -1,0 +1,19 @@
+.Invalid {
+    border: 1px solid red;
+    background-color: #FDA49A;
+}
+
+.InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+body {
+    .p-float-label {
+        input.p-component.p-inputtext {
+            &::placeholder {
+                background-color: #19374c
+            }
+        }
+    }
+}

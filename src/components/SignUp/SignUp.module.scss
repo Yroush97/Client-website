@@ -1,0 +1,75 @@
+@import '../HomePage/config.module';
+@import './mobile.module';
+
+body {
+    position: relative;
+    font-family: "Arial";
+    background-color: #f1f1f1;
+
+    .Li {
+        z-index: 9;
+       
+
+        a {
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 87px;
+            color: #19374c;
+            font-family: "Arial";
+            text-align: center;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                transition: 0.5s ease-in-out;
+                color: #50d2c2;
+                // color: #b8b8b8;
+            }
+        }
+
+        .Avatar {
+            background-color: #19374c;
+            margin: 21px;
+            padding: 10px 10px 10px 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+
+    }
+
+
+    .Layout {
+        position: absolute;
+    }
+
+    .Container {
+        position: relative;
+        @include flexbox(row);
+        height: 83vh !important;
+        background-color: #f1f1f1;
+
+        .Vector {
+            flex: 1;
+            display: flex;
+
+            img {
+                flex: 1;
+            }
+        }
+
+        .Form {
+            flex: 1;
+            @include flexbox(column);
+            justify-content: flex-start;
+            align-items: center;
+
+            h1 {
+                color: #19374c;
+                font-size: 64px;
+                font-weight: 400;
+            }
+
+        }
+    }
+}
